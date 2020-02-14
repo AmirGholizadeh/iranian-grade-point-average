@@ -1,0 +1,49 @@
+.form {
+    background: var(--white);
+    box-shadow: 0 1rem 2rem var(--gray);
+    border-radius: 5px;
+    padding: 2rem 4rem;
+    margin-top: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    &__input {
+        color: var(--white);
+        font-size: 1.8rem;
+        background: var(--primaryColor);
+        transition: all 0.3s;
+        border-radius: 5px;
+        padding: 1rem 2rem;
+        border: none;
+        &:focus {
+            background: var(--secondaryColor);
+        }
+    }
+    &__label {
+        color: var(--gray);
+        text-align: center;
+        font-size: 2rem;
+        margin-bottom: 1rem;
+    }
+    &__group {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        &:not(:last-child) {
+            margin-bottom: 5rem;
+        }
+        &:last-child {
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+}
+
+.output {
+    background: var(--white);
+    padding: 1rem 2rem;
+    text-align: center;
+    display: none;
+}

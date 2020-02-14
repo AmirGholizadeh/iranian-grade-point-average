@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fa">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="css/main.css" rel="stylesheet">
+    <title>معدل گیری</title>
+</head>
+
+<body>
+    <div class="output">
+        <p class="output__paragraph"></p>
+    </div>
+    <h1 class="header">معدل</h1>
+    <div class="container">
+        <form class="form" action="">
+            <div class="form__group">
+                <label for="grade" class="form__label">نمره</label>
+                <input type="number" id="grade" class="form__input">
+            </div>
+            <div class="form__group">
+                <label for="zarib" class="form__label">ضریب نمره</label>
+                <input type="number" id="zarib" class="form__input">
+            </div>
+            <div class="form__group">
+                <label for="mostamar" class="form__label">نمره مستمر</label>
+                <input type="number" class="form__input" id="mostamar">
+            </div>
+            <div class="form__group">
+                <button class="btn btn--form" id="add">اضافه کردن</button>
+                <button class="btn btn--form disabled" id="moadel">معدل گیری</button>
+            </div>
+        </form>
+
+    </div>
+    <script src="./js/bundle.js"></script>
+</body>
+
+</html>
